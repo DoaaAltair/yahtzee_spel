@@ -43,7 +43,7 @@ function App() {
             !isLoggedIn ? (
               <div className="login-container">
                 <div className="left-side">
-                  <img src="/yahtzee.png" alt="Yahtzee Afbeelding" className="login-image" />
+                  <img src="/Yahtzee.png" alt="Yahtzee Afbeelding" className="login-image" />
                 </div>
                 <div className="right-side">
                   <form onSubmit={handleLogin}>
