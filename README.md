@@ -1,20 +1,29 @@
-Yahtzee Spel 🎲 
-Dit is een interactief Yahtzee-spel dat ik heb gemaakt met behulp van HTML, CSS en JavaScript als onderdeel van mijn opleiding Media Design. Het doel van dit project was om te ontdekken wat ik het leukst vind binnen frontend development en een volledig werkend spel te realiseren dat gebruikers zelfstandig kunnen spelen en testen.
+Yahtzee Spel 🎲
+Dit is een interactief Yahtzee-spel dat ik heb gebouwd met React als onderdeel van mijn opleiding Media Design. Het doel was om te oefenen met frontend development, componenten te leren opbouwen en een werkende gebruikersinterface te maken. In het spel kun je inloggen, dobbelen, scores bekijken en de voortgang lokaal opslaan.
 
-Hoe werkt het spel? 
-🔐 Inloggen Voer je gebruikersnaam in om het spel te starten. Je naam wordt opgeslagen in LocalStorage zodat je later verder kunt gaan.
+Functionaliteiten
+🔐 Inloggen
+Gebruikers voeren een e-mailadres en wachtwoord in. De naam wordt opgeslagen in LocalStorage en gebruikt in het spel en op de scorepagina.
 
-🏠 Homepagina Kies "Opnieuw" om een nieuw spel te beginnen of "Hervatten" om verder te gaan waar je gebleven was.
+🏠 Homepagina
+Na inloggen kom je op de homepagina waar je kunt kiezen om een nieuw spel te starten of je huidige spel te hervatten.
 
-🎮 Spelpagina Klik op "Gooien" om vijf dobbelstenen te werpen. Je kunt bepaalde dobbelstenen vasthouden door erop te klikken voordat je opnieuw gooit. Je worpen worden automatisch opgeslagen.
+🎲 Spelpagina
+Je speelt het spel door op "Gooien" te klikken. Er worden vijf dobbelstenen weergegeven. De waarden worden willekeurig bepaald en opgeslagen in LocalStorage.
 
-📊 Scores bekijken Klik op "Scores bekijken" om je behaalde punten per categorie te zien, zoals "1-en", "3-of-a-kind" en natuurlijk "Yahtzee". Punten worden ook opgeslagen in LocalStorage.
+📊 Scores bekijken
+Na een worp kun je je score bekijken. De score wordt automatisch berekend op basis van de gegooide dobbelstenen en weergegeven per categorie (zoals 1-en, Yahtzee, Full House, etc.).
 
-Technische details Gemaakt met:
-HTML, CSS en JavaScript (zonder frameworks zoals React)
+🎨 Ontwerp
+De kleuren zwart, rood, lichtgrijs en wit zijn gekozen op basis van veelgebruikte kleuren in spelletjes, waarbij rood vaak opvalt en spanning toevoegt. De UI is ontworpen in Figma en de afbeeldingen (zoals voor de inlogpagina) zijn gemaakt in Canva.
 
-Opslag:
-Gegevens (zoals gebruikersnaam, worpen en scores) worden lokaal opgeslagen met behulp van localStorage
+Bestandenstructuur
+App.js – Hoofdcomponent met routing en inlogfunctionaliteit
 
-Design:
-Het ontwerp is geïnspireerd op bestaande voorbeeldspelletjes, waarbij vooral de kleur rood vaak terugkwam als speels en opvallend element
+Home.js – Welkomstpagina na inloggen
+
+Game.js – Spelpagina met dobbelstenen en acties
+
+Scores.js – Scorepagina (nog toevoegen of koppelen)
+
+Home.css / Game.css / Login.css – Styling per pagina
